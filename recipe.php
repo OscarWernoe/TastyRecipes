@@ -27,12 +27,12 @@ session_start();
 
     $recipes = simplexml_load_file('xml/recipes.xml');
     if($recipes === false) {
-        echo 'Could not load recipes!';
+        echo 'ERROR: Could not load the recipes!';
         exit;
     }
 
     if(empty($recipes->recipe[$recipe_number])) {
-        echo 'Could not find the specified recipe, try again!';
+        echo 'ERROR: Could not find the specified recipe!';
         exit;
     }
 

@@ -25,4 +25,4 @@ CREATE TABLE IF NOT EXISTS comments (
 INSERT INTO recipes(recipe_id) VALUES (NULL), (NULL);
 
 INSERT INTO comments(user_id, recipe_id, comment) VALUES (1, 1, 'Hello'),
-  (1, 2, 'What is this?');
+  (1, 2, 'This is a comment.');
