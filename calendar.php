@@ -24,8 +24,8 @@ session_start();
         <h2>Calendar</h2>
     </div>
 
-    <div class="container-fluid text-center">
-        <div class="row calendar">
+    <div id="calendar" class="container-fluid text-center">
+        <div class="row calendar-top-row">
             <div class="col-xs-1 col-md-1 calendar-col">Mon</div>
             <div class="col-xs-1 col-md-1 calendar-col">Tue</div>
             <div class="col-xs-1 col-md-1 calendar-col">Wed</div>

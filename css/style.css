@@ -1,10 +1,11 @@
 header {
-    background-image: url(".");
+    background-color: darkcyan;
+    color: white;
     padding: 50px;
 }
 
 h2 {
-    padding: 5px;
+    text-align: center;
 }
 
 .row ul li {
@@ -64,10 +65,11 @@ footer {
 .background {
     background-color: whitesmoke;
     margin-top: 20px;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
 
-.calendar {
+.calendar-top-row {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -118,12 +120,12 @@ footer {
 }
 
 @media (max-width: 900px) {
-    .calendar-row {
-        margin: 0;
+    .container-fluid#calendar {
+        padding: 0;
     }
 
-    .container-fluid {
-        padding: 0;
+    .calendar-row {
+        margin: 0;
     }
 
     .calendar-row .col-md-1 {

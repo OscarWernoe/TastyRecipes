@@ -39,13 +39,16 @@ session_start();
     include 'fragments/header.php';
     include 'fragments/nav.php';
     ?>
-    <div class="container-fluid text-center">
-        <h2><?php echo $recipes->recipe[$recipe_number]->title?></h2>
-    </div>
+
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <img src="">
+        <div class="row background">
+            <div class="col-md-6 col-sm-12">
+                <?php
+                echo '<img class="img-responsive" src="' . $recipes->recipe[$recipe_number]->imagepath . '" alt="Picture of ' . $recipes->recipe[$recipe_number]->title . '">'
+                ?>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2><?php echo $recipes->recipe[$recipe_number]->title?></h2>
             </div>
         </div>
         <div class="row background">

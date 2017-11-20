@@ -5,10 +5,10 @@
             <li><a href="/calendar.php">Calendar</a></li>
             <?php
             if(isset($_SESSION['username'])) {
-                echo '<li><a href="/logout.php">Sign Out</a></li>';
+                echo '<li><a href="/logout.php">Sign out</a></li>';
             } else {
                 echo '<li><a href="/register.php">Register</a></li>';
-                echo '<li><a href="/login.php">Sign In</a></li>';
+                echo '<li><a href="/login.php">Sign in</a></li>';
             }
             ?>
         </ul>

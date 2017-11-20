@@ -70,7 +70,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     include 'fragments/nav.php';
     ?>
     <div class="container text-center">
-        <h2>Sign In</h2>
+        <h2>Sign in</h2>
     </div>
     <div class="container">
         <p>Please fill in your credentials to login.</p>

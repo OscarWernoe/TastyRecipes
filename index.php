@@ -24,12 +24,12 @@ session_start();
     </div>
     <div class="container text-center recipes">
         <a href="recipe.php?recipe=0">
-            <div class="col-sm-12 col-md-6 recipe-box recipe1-image">
+            <div class="col-sm-12 col-md-6 recipe-box recipe1-image" title="Meatballs">
                 <div><span class="label label-primary recipe-label">Meatballs</span></div>
             </div>
         </a>
         <a href="recipe.php?recipe=1">
-            <div class="col-sm-12 col-md-6 recipe-box recipe2-image">
+            <div class="col-sm-12 col-md-6 recipe-box recipe2-image" title="Pancakes">
                 <div><span class="label label-primary recipe-label">Pancakes</span></div>
             </div>
         </a>
