@@ -16,8 +16,8 @@ session_start();
 </head>
 <body>
     <?php
-    include 'fragments/header.html';
-    include 'fragments/nav.php';
+    include 'resources/fragments/header.html';
+    include 'resources/fragments/nav.php';
     ?>
 
     <div class="container text-center">
@@ -156,7 +156,7 @@ session_start();
     </div>
 
     <?php
-    include 'fragments/footer.html';
+    include 'resources/fragments/footer.html';
     ?>
 </body>
 </html>

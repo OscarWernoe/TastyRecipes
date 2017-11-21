@@ -79,8 +79,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <?php
-    include 'fragments/header.html';
-    include 'fragments/nav.php';
+    include 'resources/fragments/header.html';
+    include 'resources/fragments/nav.php';
     ?>
     <div class="container text-center">
         <h2>Register</h2>
@@ -110,7 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
     <?php
-    include 'fragments/footer.html';
+    include 'resources/fragments/footer.html';
     ?>
 </body>
 </html>

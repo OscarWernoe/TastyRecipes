@@ -25,7 +25,7 @@ session_start();
         exit;
     }
 
-    $recipes = simplexml_load_file('xml/recipes.xml');
+    $recipes = simplexml_load_file('resources/xml/recipes.xml');
     if($recipes === false) {
         echo 'ERROR: Could not load the recipes!';
         exit;
@@ -36,8 +36,8 @@ session_start();
         exit;
     }
 
-    include 'fragments/header.html';
-    include 'fragments/nav.php';
+    include 'resources/fragments/header.html';
+    include 'resources/fragments/nav.php';
     ?>
 
     <div class="container">
@@ -81,7 +81,7 @@ session_start();
     require 'get-comments.php';
     get_comments($link, $recipe_number + 1);
 
-    include 'fragments/footer.html';
+    include 'resources/fragments/footer.html';
     ?>
 </body>
 </html>

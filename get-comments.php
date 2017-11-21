@@ -39,7 +39,7 @@ function get_comments($link, $recipe_id) {
         <form action="comment.php" method="post">
             <div class="form-group">
                 <label for="comment">Comment:</label>
-                <textarea class="form-control" name="comment" id="comment"></textarea>
+                <textarea class="form-control" name="comment" id="comment" maxlength="255"></textarea>
                 <input type="hidden" name="recipe_id" value=<?=$recipe_id?>>
             </div>
             <input type="submit" class="btn btn-primary" value="Submit">

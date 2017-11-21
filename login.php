@@ -91,7 +91,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
     <?php
-    include 'fragments/footer.html';
+    include 'resources/fragments/footer.html';
     ?>
 </body>
 </html>
