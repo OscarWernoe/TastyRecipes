@@ -2,7 +2,7 @@
 
 function get_comments($link, $recipe_id) {
     ?>
-    <div class="container comment-sec background">
+    <div class="container comment-sec">
         <h3>Comments</h3>
     <?php
 
