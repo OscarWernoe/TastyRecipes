@@ -6,7 +6,10 @@ function get_comments($link, $recipe_id) {
         <h3>Comments</h3>
     <?php
 
-    $sql = "SELECT comment_id, username, comment FROM comments JOIN users ON comments.user_id = users.user_id WHERE recipe_id = $recipe_id ORDER BY comment_id";
+    $sql = "SELECT comment_id, username, comment FROM comments JOIN users ON comments.user_id = users.user_id
+            WHERE recipe_id = $recipe_id
+            ORDER BY comment_id";
+
     $result = mysqli_query($link, $sql);
 
     if (mysqli_num_rows($result) > 0) {

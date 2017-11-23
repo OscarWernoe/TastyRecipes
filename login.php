@@ -66,8 +66,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <?php
-    include 'fragments/header.html';
-    include 'fragments/nav.php';
+    include 'resources/fragments/header.html';
+    include 'resources/fragments/nav.php';
     ?>
     <div class="container text-center">
         <h2>Sign in</h2>
