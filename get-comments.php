@@ -7,13 +7,12 @@ function get_comments($link, $recipe_id) {
     <?php
 
     $sql = "SELECT comment_id, username, comment FROM comments JOIN users ON comments.user_id = users.user_id
-            WHERE recipe_id = $recipe_id
-            ORDER BY comment_id";
+            WHERE recipe_id = $recipe_id ORDER BY comment_id";
 
     $result = mysqli_query($link, $sql);
 
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
+    if(mysqli_num_rows($result) > 0) {
+        while($row = mysqli_fetch_assoc($result)) {
             ?>
             <div class="media">
                 <div class="media-body">
