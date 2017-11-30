@@ -71,8 +71,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasty Recipes</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="resources/css/tasty.css">
@@ -90,17 +88,17 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group <?php echo (!empty($username_error)) ? 'has-error' : ''; ?>">
                 <label for="username">Username:<sup>*</sup></label>
-                <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+                <input type="text" name="username" class="form-control" value="<?php echo $username; ?>" title="Username">
                 <span class="help-block"><?php echo $username_error; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($password_error)) ? 'has-error' : ''; ?>">
                 <label for="password">Password:<sup>*</sup></label>
-                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>">
+                <input type="password" name="password" class="form-control" value="<?php echo $password; ?>" title="Password">
                 <span class="help-block"><?php echo $password_error; ?></span>
             </div>
             <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
                 <label for="confirm_password">Confirm Password:<sup>*</sup></label>
-                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>">
+                <input type="password" name="confirm_password" class="form-control" value="<?php echo $confirm_password; ?>" title="Confirm Password">
                 <span class="help-block"><?php echo $confirm_password_error; ?></span>
             </div>
             <div class="form-group">
